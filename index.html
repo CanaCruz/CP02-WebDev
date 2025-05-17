@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkpoint 2 - Web Development</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    section { margin-bottom: 40px; }
+    input, button { margin: 5px; padding: 5px; }
+    .color-item {
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contador de Sessão -->
+  <section>
+    <h2>⏱️ Contador de Sessão</h2>
+    <p>Tempo decorrido: <span id="tempo">0</span> segundos</p>
+    <p id="mensagem" style="color: red;"></p>
+  </section>
+
+  <!-- Sequência Misteriosa -->
+  <section>
+    <h2>🔢 Enigma da Sequência Misteriosa</h2>
+    <input type="number" id="n1" placeholder="1º número">
+    <input type="number" id="n2" placeholder="2º número">
+    <input type="number" id="n3" placeholder="3º número">
+    <button onclick="analisarSequencia()">Analisar</button>
+    <p id="padrao"></p>
+    <p id="sequencia"></p>
+  </section>
+
+  <!-- Lista de Cores -->
+  <section>
+    <h2>🎨 Lista de Cores Dinâmica</h2>
+    <input type="text" id="corInput" placeholder="Digite uma cor (em inglês) e pressione Enter">
+    <ul id="listaCores"></ul>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
